@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="timer_web.css">
+<script src="timer_web.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer App</title>
+</head>
+
+<body>
+    <div class="timer-container">
+        <h2>Timer App</h2>
+        <div class="time" id="display">00:00:00</div>
+        <button class="start" onclick="startTimer()">START</button>
+        <button class="stop" onclick="pauseTimer()">STOP</button>
+        <button class="reset" onclick="resetTimer()">Reset</button>
+        <br>
+        <button class="pa" onclick="setTimer(25)">Pomodoro (25 min)</button>
+        <button class="short-break" onclick="setTimer(5)">Short Break (5 min)</button>
+        <button class="long-break"  onclick="setTimer(15)">Long Break (15 min)</button>
+    </div>
+    <audio id="alert" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+</body>
+
+</html>
